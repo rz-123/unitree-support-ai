@@ -1,0 +1,196 @@
+{
+  "version": 2,
+  "updated_at": "2026-10-27",
+  "_comment": "type=unitree_space：宇树文档中心（目录走 robot-api，正文走 doc-cdn）。目录接口被 EdgeOne 按 IP 拦截时，代码会自动用浏览器 TLS 指纹重试。enabled=false 的条目不会同步。",
+  "urls": [
+    {
+      "name": "H1 / H1-2 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "H1_developer",
+      "enabled": true,
+      "note": "人形旗舰，含底层/高层服务接口、故障码、关节电机顺序；H1 与 H1-2 是两套独立章节"
+    },
+    {
+      "name": "G1 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "G1_developer",
+      "enabled": true,
+      "note": "含底层运动、高层运动、常见错误及释义"
+    },
+    {
+      "name": "H2 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "H2_developer",
+      "enabled": true,
+      "note": "新一代人形，操作指南与运动控制开发"
+    },
+    {
+      "name": "R1 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "R1_developer",
+      "enabled": true,
+      "note": "桌面人形，含 EDU 拓展模块"
+    },
+    {
+      "name": "G1-D SDK 开发指南",
+      "type": "unitree_space",
+      "space": "G1D_Developer",
+      "enabled": true,
+      "note": "数采/教育版本，控制接口与 FAQ"
+    },
+    {
+      "name": "R1-A SDK 开发指南",
+      "type": "unitree_space",
+      "space": "R1-A_developer",
+      "enabled": true,
+      "note": "R1-A 衍生型号"
+    },
+    {
+      "name": "遥操作（开源适配）",
+      "type": "unitree_space",
+      "space": "Teleoperation",
+      "enabled": true,
+      "note": "Vision Pro、Kinect 遥操作示例"
+    },
+    {
+      "name": "强化学习运动控制（开源适配）",
+      "type": "unitree_space",
+      "space": "rl_gym",
+      "enabled": true,
+      "note": "unitree_rl_gym 安装、配置与示例"
+    },
+    {
+      "name": "Go2 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "developer",
+      "enabled": true,
+      "note": "四足消费级主力，含遥控器、服务接口与 FAQ"
+    },
+    {
+      "name": "B2 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "B2_developer",
+      "enabled": true,
+      "note": "四足行业级，工业场景接口"
+    },
+    {
+      "name": "Go2-W SDK 开发指南",
+      "type": "unitree_space",
+      "space": "Go2-W_developer",
+      "enabled": true,
+      "note": "Go2 轮足版本"
+    },
+    {
+      "name": "四足机器人算法实践",
+      "type": "unitree_space",
+      "space": "Algorithm_Practice",
+      "enabled": true,
+      "note": "unitree_guide 算法实践教程"
+    },
+    {
+      "name": "A2 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "A2_SDK_Development_Guide",
+      "enabled": true,
+      "note": "含常见错误及释义"
+    },
+    {
+      "name": "As2 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "AS2_SDK_Development_Guide",
+      "enabled": true,
+      "note": "小型四足"
+    },
+    {
+      "name": "Z1 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "Z1_developer",
+      "enabled": true,
+      "note": "机械臂，含更新日志"
+    },
+    {
+      "name": "R1-7a 开发指南",
+      "type": "unitree_space",
+      "space": "R1-7a",
+      "enabled": true,
+      "note": "七轴机械臂，含用户手册与安装方式"
+    },
+    {
+      "name": "D2 机械臂 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "D2_Arm_Development_Guide",
+      "enabled": true,
+      "note": "D2 使用文档"
+    },
+    {
+      "name": "IM6014 电机开发指南",
+      "type": "unitree_space",
+      "space": "Motor_IM6014 Development Guide",
+      "enabled": true,
+      "note": "关节电机，含 CAN 转 485、调试助手、装配说明"
+    },
+    {
+      "name": "M8010 电机开发指南",
+      "type": "unitree_space",
+      "space": "Motor_SDK_Dev_Guide",
+      "enabled": true,
+      "note": "含固件升级与 ID 配置"
+    },
+    {
+      "name": "SV1-25 开发指南",
+      "type": "unitree_space",
+      "space": "SV1-25_develop",
+      "enabled": true,
+      "note": "舵机快速开发"
+    },
+    {
+      "name": "Dex3-1 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "dex3-1_hand",
+      "enabled": true,
+      "note": "三指灵巧手"
+    },
+    {
+      "name": "Dex1-1 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "dex1-1_gripper",
+      "enabled": true,
+      "note": "夹爪"
+    },
+    {
+      "name": "Dex5-1 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "Dex5-1 SDK Development Guide",
+      "enabled": true,
+      "note": "五指灵巧手，含 DDS 上层通信"
+    },
+    {
+      "name": "J288/S288 舵机开发指南",
+      "type": "unitree_space",
+      "space": "J288-S288 Servo",
+      "enabled": true,
+      "note": "含资料汇总下载"
+    },
+    {
+      "name": "L1 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "L1_SDK",
+      "enabled": true,
+      "note": "4D 激光雷达"
+    },
+    {
+      "name": "L2 SDK 开发指南",
+      "type": "unitree_space",
+      "space": "L2_SDK",
+      "enabled": true,
+      "note": "4D 激光雷达"
+    },
+    {
+      "name": "SLAM 导航开发指南",
+      "type": "unitree_space",
+      "space": "navigation",
+      "enabled": true,
+      "note": "行业级导航使用与二次开发"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿.venv/
+__pycache__/
+*.py[cod]
+.env
+.uv-cache/
+data/docs_cache/
+data/models/
+data/tmp/
+data/hash_records.json
+data/sync.log
+.install.log
+vectorstore/
+*.log
+.DS_Store
+Thumbs.db

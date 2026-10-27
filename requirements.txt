@@ -1,0 +1,39 @@
+# ============================================================
+# 本项目在 Windows + Python 3.12.7 下实测通过（2026-10）
+# 安装：pip install -r requirements.txt
+# ============================================================
+
+# ---------- LangChain 0.3.x 稳定版（LCEL 对话式 RAG） ----------
+langchain==0.3.30
+langchain-core==0.3.86
+langchain-community==0.3.31
+langchain-openai==0.3.35
+langchain-text-splitters==0.3.11
+
+# ---------- 向量库 ----------
+faiss-cpu==1.15.1
+
+# ---------- 大模型 / Embedding ----------
+dashscope==1.27.7
+openai==2.54.0
+
+# ---------- 网页抓取与解析 ----------
+requests==2.34.2
+curl_cffi==0.16.3        # 官网目录接口被 EdgeOne 按 IP 拦截时，用浏览器 TLS 指纹兜底
+beautifulsoup4==4.15.0
+lxml==6.1.3
+
+# ---------- 文档处理 ----------
+pypdf==6.21.0
+pandas==3.0.6
+openpyxl==3.1.5
+fpdf2==2.8.9
+
+# ---------- 前端 / 后端 ----------
+streamlit==1.66.0
+fastapi==0.143.3
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+
+# ---------- 配置 ----------
+python-dotenv==1.2.4
