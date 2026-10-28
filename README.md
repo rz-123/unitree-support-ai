@@ -2,8 +2,13 @@
 
 > 面向 Unitree（宇树）机器人售后场景的 RAG 知识库助手：把官方文档和历史工单，变成**可检索、可追溯、可培训**的答案。
 
+**技术栈**：Python 3.12 · LangChain 1.4.7（链式构造器由 `langchain-classic` 提供）· FAISS · Streamlit · FastAPI · fpdf2
+
+> 版本选择：LangChain 0.3 已进入维护期（2026 年 12 月停止支持），本项目跟随 **1.x LTS**；
+> 若需停留在 0.3，可用 `requirements-langchain-0.3.txt`，代码同时兼容两条线。
+
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![LangChain](https://img.shields.io/badge/LangChain-0.3-1C3C3C)](https://python.langchain.com/)
+[![LangChain](https://img.shields.io/badge/LangChain-1.4-1C3C3C)](https://docs.langchain.com/oss/python/releases/langchain-v1)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.66-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.143-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
@@ -127,7 +132,7 @@ docker run -p 8501:8501 --env-file .env unitree-support-ai
 
 | 决定 | 原因 |
 |---|---|
-| `create_history_aware_retriever` + `create_stuff_documents_chain` + `create_retrieval_chain` | 等价的 LCEL 组合，替代已弃用的 `ConversationalRetrievalChain` |
+| `create_history_aware_retriever` + `create_stuff_documents_chain` + `create_retrieval_chain` | 等价的 LCEL 组合，替代已弃用的 `ConversationalRetrievalChain`；LangChain 1.x 中这些构造器由 `langchain-classic` 提供 |
 | 单轮跳过问题改写 | 没有上下文时不必多调一次模型，实测省约 40% 时延 |
 | 召回 8 倍再重排 | 「机型 + 章节」类问题，正确页面常在 20 名开外 |
 | 章节名写入被向量化的正文 | 很多页面是纯表格（如「H1-2关节电机顺序」），标题里才有机型 |

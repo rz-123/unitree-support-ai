@@ -472,10 +472,15 @@ class RobotSupportRAG:
             from langchain.chains.history_aware_retriever import create_history_aware_retriever
             from langchain.chains.retrieval import create_retrieval_chain
         except ImportError:
-            from langchain_classic.chains import (  # type: ignore
-                create_history_aware_retriever,
-                create_retrieval_chain,
+            # LangChain 1.x：这些构造器迁到了 langchain-classic，且只从子模块导出
+            from langchain_classic.chains.combine_documents import (  # type: ignore
                 create_stuff_documents_chain,
+            )
+            from langchain_classic.chains.history_aware_retriever import (  # type: ignore
+                create_history_aware_retriever,
+            )
+            from langchain_classic.chains.retrieval import (  # type: ignore
+                create_retrieval_chain,
             )
         return create_history_aware_retriever, create_retrieval_chain, create_stuff_documents_chain
 
